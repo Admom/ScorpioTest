@@ -1,2 +1,2 @@
-# ScorpioTest
-这是个测试项目
+﻿# ScorpioTest
+第一次使用，这是个测试项目，安卓大神之路由此开始
