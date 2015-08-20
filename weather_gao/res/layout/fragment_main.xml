@@ -1,0 +1,128 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/top_bar" />
+
+            <FrameLayout
+                android:id="@+id/id_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <include layout="@layout/bottom_bar" />
+        </LinearLayout>
+    </FrameLayout>
+ <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#EEffffff" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/guano_icon"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#00f"           
+            android:text="@string/app_name" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/drawerlayout_bt_bg"
+            android:drawableLeft="@drawable/ic_dl_green_m"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="天气皮肤"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button1"
+            android:background="@drawable/drawerlayout_bt_bg"
+            android:drawableLeft="@drawable/ic_dl_green_s"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="精品推荐"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button2"
+            android:background="@drawable/drawerlayout_bt_bg"
+            android:drawableLeft="@drawable/ic_dl_yellow"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="历史天气"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+
+       
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:background="@drawable/drawerlayout_bt_bg"
+            android:drawableLeft="@drawable/ic_dl_pink"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="分享"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button5"
+            android:background="@drawable/drawerlayout_bt_bg"
+            android:drawableLeft="@drawable/ic_dl_red"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="设置"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/exitapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/drawerlayout_bt_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="退出程序"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
